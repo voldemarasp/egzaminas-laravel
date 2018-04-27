@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,8 +16,6 @@ class DatabaseSeeder extends Seeder
     		'name' => 'Admin',
     		'email' => 'admin@admin.com',
     		'password' => bcrypt('admin'),
-    		'role' => 'admin',
-    		'disabled' => 0
     	] );
     }
 }
