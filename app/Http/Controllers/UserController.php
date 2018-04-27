@@ -17,7 +17,7 @@ class UserController extends Controller
 	}
 
 	public function userPost($id) {
-		$userPosts = Post::where('user_id', $id)->get();
+		$userPosts = Post::where('user_id', $id)->paginate(5);
 		return view('welcome', ['posts' => $userPosts]);
 	}
 

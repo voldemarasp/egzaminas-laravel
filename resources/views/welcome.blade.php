@@ -18,8 +18,11 @@
         </div>
         @endforeach
         <div class="col-12 mt-5 d-flex justify-content-center"> 
-            {{$posts->links()}}
-        </div>
+            @php if (!empty($posts)) {
+            echo $posts->links(); 
+        }
+        @endphp
     </div>
+</div>
 </div>
 @endsection
