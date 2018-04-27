@@ -1,22 +1,24 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\User;
 
-class DatabaseSeeder extends Seeder
+class UserSeed extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
     	User::create( [
-    		'name' => 'Admin',
-    		'email' => 'admin@admin.com',
+    		'name' => 'Best',
+    		'email' => 'best@admin.com',
     		'password' => bcrypt('admin'),
     		'role' => 'admin',
     		'disabled' => 0
     	] );
+
     }
 }

@@ -28,5 +28,11 @@ Route::get('/deletePost/{id}', 'PostsController@delete')->name('deletePost');
 Route::get('/users', 'UserController@all')->name('users');
 Route::get('/userPost/{id}', 'UserController@userPost')->name('userPost');
 
+Route::get('/edituser', 'UserController@edit')->name('edituser');
+Route::post('/edituserAction', 'UserController@update')->name('edituserAction');
+Route::get('/deleteuser', 'UserController@delete')->name('deleteuser');
+
+Route::get('/userCreate', 'UserController@create')->name('createPost');
+
 
 Auth::routes();

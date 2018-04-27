@@ -61,6 +61,8 @@
                                 onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
+                                <a class="dropdown-item" href="{{ route('edituser') }}">Edit profile</a>
+                                <a class="dropdown-item" href="{{ route('deleteuser') }}">Delete profile</a>
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
